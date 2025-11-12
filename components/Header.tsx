@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import styles from './Header.module.css'
 
 export default function Header() {
@@ -21,14 +22,20 @@ export default function Header() {
       {/* HEADER / NAVIGATION */}
       <header className={styles.header}>
         <div className={styles.headerContent}>
-          <div className={styles.logo}>Padelpickle</div>
+          <Link href="/" className={styles.logo}>
+            Padelpickle
+          </Link>
           <nav className={styles.nav}>
-            <div className={styles.navItem}>Home</div>
+            <Link href="/" className={styles.navItem}>
+              Home
+            </Link>
             <div className={styles.navItem}>Shop</div>
             <div className={styles.navItem}>Blogs</div>
             <div className={styles.navItem}>About us</div>
             <div className={styles.navItem}>Travel</div>
-            <div className={styles.navItem}>Contact us</div>
+            <Link href="/contact-us" className={styles.navItem}>
+              Contact us
+            </Link>
             <div className={styles.bookButton}>Book A Court</div>
           </nav>
           <div
@@ -41,12 +48,16 @@ export default function Header() {
           </div>
         </div>
         <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.active : ''}`}>
-          <div className={styles.mobileNavItem}>Home</div>
+          <Link href="/" className={styles.mobileNavItem}>
+            Home
+          </Link>
           <div className={styles.mobileNavItem}>Shop</div>
           <div className={styles.mobileNavItem}>Blogs</div>
           <div className={styles.mobileNavItem}>About us</div>
           <div className={styles.mobileNavItem}>Travel</div>
-          <div className={styles.mobileNavItem}>Contact us</div>
+          <Link href="/contact-us" className={styles.mobileNavItem}>
+            Contact us
+          </Link>
           <div className={styles.bookButton} style={{ margin: '20px 0' }}>
             Book A Court
           </div>
