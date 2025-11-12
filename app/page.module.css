@@ -1,0 +1,171 @@
+.section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #2d3748;
+}
+
+.sectionTitle span {
+  color: #a8c686;
+  font-style: italic;
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.threeColumn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.card {
+  background: white;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  height: 250px;
+  background: linear-gradient(
+    135deg,
+    #cbd5e0 25%,
+    #e2e8f0 25%,
+    #e2e8f0 50%,
+    #cbd5e0 50%,
+    #cbd5e0 75%,
+    #e2e8f0 75%,
+    #e2e8f0
+  );
+  background-size: 30px 30px;
+}
+
+.cardContent {
+  padding: 25px;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.productCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.productImage {
+  height: 200px;
+  background: linear-gradient(
+    135deg,
+    #cbd5e0 25%,
+    #e2e8f0 25%,
+    #e2e8f0 50%,
+    #cbd5e0 50%,
+    #cbd5e0 75%,
+    #e2e8f0 75%,
+    #e2e8f0
+  );
+  background-size: 25px 25px;
+}
+
+.productInfo {
+  padding: 20px;
+}
+
+.productName {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2d3748;
+}
+
+.productPrice {
+  background: #a8c686;
+  color: #2d3748;
+  padding: 8px 15px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.ctaButton {
+  background: #a8c686;
+  color: #2d3748;
+  padding: 15px 40px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ctaButton:hover {
+  background: #95b373;
+  transform: translateY(-2px);
+}
+
+.featureBox {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+  width: 80px;
+  height: 80px;
+  background: #a8c686;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .twoColumn,
+  .threeColumn,
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,116 @@
+.topBar {
+  background: #a8c686;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #2d3748;
+}
+
+.header {
+  background: #a8c686;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
+  color: #2d3748;
+  font-family: cursive;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navItem {
+  color: #2d3748;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.navItem:hover {
+  opacity: 0.7;
+}
+
+.bookButton {
+  background: #2d3748;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.burgerLine {
+  width: 30px;
+  height: 3px;
+  background: #2d3748;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.burgerMenu.active .burgerLine:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.burgerMenu.active .burgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerMenu.active .burgerLine:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  background: #a8c686;
+  border-top: 1px solid rgba(45, 55, 72, 0.1);
+}
+
+.mobileMenu.active {
+  display: flex;
+}
+
+.mobileNavItem {
+  color: #2d3748;
+  font-weight: 500;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(45, 55, 72, 0.1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: flex;
+  }
+}
