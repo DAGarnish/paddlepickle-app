@@ -14,7 +14,6 @@
 
 .sectionTitle span {
   color: #a8c686;
-  font-style: italic;
 }
 
 .twoColumn {
@@ -123,6 +122,7 @@
   font-weight: 700;
   border-radius: 6px;
   font-size: 18px;
+  line-height: 1.4;
 }
 
 .ctaButton {
@@ -167,5 +167,14 @@
   .threeColumn,
   .productGrid {
     grid-template-columns: 1fr;
+  }
+
+  .productPrice {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
   }
 }

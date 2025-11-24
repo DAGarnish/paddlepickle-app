@@ -15,6 +15,10 @@ export default function Home() {
           Sunny <span>Escapes</span>
         </div>
 
+        {/* PICKLEBALL HOLIDAYS */}
+        <h3 style={{ fontSize: '28px', fontWeight: 600, color: '#2d3748', marginBottom: '30px', marginTop: '20px' }}>
+          Pickleball Holidays
+        </h3>
         <div className={styles.threeColumn}>
           <div className={styles.card}>
             <div
@@ -25,10 +29,13 @@ export default function Home() {
               }}
             ></div>
             <div className={styles.cardContent}>
-              <div className={styles.cardTitle}>Florida Keys Resort</div>
-              <div className="wireframe-text"></div>
-              <div className="wireframe-text" style={{ width: '80%' }}></div>
-              <div className="wireframe-text" style={{ width: '60%' }}></div>
+              <div className={styles.cardTitle}>Florida Keys</div>
+              <p style={{ color: '#718096', margin: '10px 0' }}>
+                7-night beachfront pickleball resort with daily clinics
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '15px' }}>
+                $1,899 / €1,749 / £1,499
+              </div>
               <div
                 className={styles.ctaButton}
                 style={{ marginTop: '20px', padding: '10px 20px', fontSize: '14px' }}
@@ -43,14 +50,17 @@ export default function Home() {
               className={styles.cardImage}
               style={{
                 background:
-                  "url('https://img.b2bpic.net/premium-photo/coconut-palm-tree-sandy-beach_109800-14617.jpg') center/cover",
+                  "url('https://img.b2bpic.net/premium-photo/beautiful-beach-sunset-with-palm-trees-san-diego-california_1194713-164230.jpg') center/cover",
               }}
             ></div>
             <div className={styles.cardContent}>
-              <div className={styles.cardTitle}>Costa del Sol, Spain</div>
-              <div className="wireframe-text"></div>
-              <div className="wireframe-text" style={{ width: '80%' }}></div>
-              <div className="wireframe-text" style={{ width: '60%' }}></div>
+              <div className={styles.cardTitle}>Southern California</div>
+              <p style={{ color: '#718096', margin: '10px 0' }}>
+                5-night coastal pickleball getaway with pro coaching
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '15px' }}>
+                $2,099 / €1,929 / £1,659
+              </div>
               <div
                 className={styles.ctaButton}
                 style={{ marginTop: '20px', padding: '10px 20px', fontSize: '14px' }}
@@ -70,9 +80,93 @@ export default function Home() {
             ></div>
             <div className={styles.cardContent}>
               <div className={styles.cardTitle}>Algarve, Portugal</div>
-              <div className="wireframe-text"></div>
-              <div className="wireframe-text" style={{ width: '80%' }}></div>
-              <div className="wireframe-text" style={{ width: '60%' }}></div>
+              <p style={{ color: '#718096', margin: '10px 0' }}>
+                6-night beachfront pickleball experience
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '15px' }}>
+                $1,649 / €1,519 / £1,299
+              </div>
+              <div
+                className={styles.ctaButton}
+                style={{ marginTop: '20px', padding: '10px 20px', fontSize: '14px' }}
+              >
+                View Package
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* PADEL HOLIDAYS */}
+        <h3 style={{ fontSize: '28px', fontWeight: 600, color: '#2d3748', marginBottom: '30px', marginTop: '60px' }}>
+          Padel Holidays
+        </h3>
+        <div className={styles.threeColumn}>
+          <div className={styles.card}>
+            <div
+              className={styles.cardImage}
+              style={{
+                background:
+                  "url('https://img.b2bpic.net/premium-photo/coconut-palm-tree-sandy-beach_109800-14617.jpg') center/cover",
+              }}
+            ></div>
+            <div className={styles.cardContent}>
+              <div className={styles.cardTitle}>Costa del Sol, Spain</div>
+              <p style={{ color: '#718096', margin: '10px 0' }}>
+                5-night luxury padel resort with training sessions
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '15px' }}>
+                $2,299 / €2,119 / £1,815
+              </div>
+              <div
+                className={styles.ctaButton}
+                style={{ marginTop: '20px', padding: '10px 20px', fontSize: '14px' }}
+              >
+                View Package
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div
+              className={styles.cardImage}
+              style={{
+                background:
+                  "url('https://img.b2bpic.net/premium-photo/beautiful-mediterranean-beach-alicante-spain_1127408-44791.jpg') center/cover",
+              }}
+            ></div>
+            <div className={styles.cardContent}>
+              <div className={styles.cardTitle}>Costa Blanca, Spain</div>
+              <p style={{ color: '#718096', margin: '10px 0' }}>
+                6-night Mediterranean padel holiday with expert instruction
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '15px' }}>
+                $1,999 / €1,839 / £1,579
+              </div>
+              <div
+                className={styles.ctaButton}
+                style={{ marginTop: '20px', padding: '10px 20px', fontSize: '14px' }}
+              >
+                View Package
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div
+              className={styles.cardImage}
+              style={{
+                background:
+                  "url('https://img.b2bpic.net/premium-photo/beautiful-beach-sunset-with-palm-trees-san-diego-california_1194713-164230.jpg') center/cover",
+              }}
+            ></div>
+            <div className={styles.cardContent}>
+              <div className={styles.cardTitle}>Southern California</div>
+              <p style={{ color: '#718096', margin: '10px 0' }}>
+                5-night premium padel retreat at exclusive facilities
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '15px' }}>
+                $2,399 / €2,209 / £1,895
+              </div>
               <div
                 className={styles.ctaButton}
                 style={{ marginTop: '20px', padding: '10px 20px', fontSize: '14px' }}
@@ -102,15 +196,17 @@ export default function Home() {
             ></div>
             <div className={styles.cardContent}>
               <div className={styles.cardTitle}>Pickleball Court Kit</div>
-              <div className="wireframe-text"></div>
-              <div className="wireframe-text" style={{ width: '90%' }}></div>
-              <div className="wireframe-text" style={{ width: '80%' }}></div>
+              <p style={{ color: '#718096', margin: '10px 0', lineHeight: '1.6' }}>
+                Complete court installation kit including professional-grade surface,
+                regulation net system, line marking, and installation guide. Perfect for
+                backyard or commercial installations.
+              </p>
               <div style={{ marginTop: '20px' }}>
                 <div
                   className={styles.productPrice}
-                  style={{ padding: '10px 20px', fontSize: '20px' }}
+                  style={{ padding: '10px 20px', fontSize: '18px' }}
                 >
-                  FROM $2,499
+                  FROM $2,499 / €2,299 / £1,975
                 </div>
               </div>
               <div className={styles.ctaButton} style={{ marginTop: '20px' }}>
@@ -130,15 +226,17 @@ export default function Home() {
             ></div>
             <div className={styles.cardContent}>
               <div className={styles.cardTitle}>Padel Court Kit</div>
-              <div className="wireframe-text"></div>
-              <div className="wireframe-text" style={{ width: '90%' }}></div>
-              <div className="wireframe-text" style={{ width: '80%' }}></div>
+              <p style={{ color: '#718096', margin: '10px 0', lineHeight: '1.6' }}>
+                Premium padel court package with tempered glass walls, artificial turf,
+                LED lighting system, and professional fencing. Includes full installation
+                service and 5-year warranty.
+              </p>
               <div style={{ marginTop: '20px' }}>
                 <div
                   className={styles.productPrice}
-                  style={{ padding: '10px 20px', fontSize: '20px' }}
+                  style={{ padding: '10px 20px', fontSize: '18px' }}
                 >
-                  FROM $8,999
+                  FROM $8,999 / €8,279 / £7,109
                 </div>
               </div>
               <div className={styles.ctaButton} style={{ marginTop: '20px' }}>
@@ -166,9 +264,11 @@ export default function Home() {
             ></div>
             <div className={styles.productInfo}>
               <div className={styles.productName}>Paddle Racket Pro</div>
-              <div className="wireframe-text" style={{ height: '15px', width: '80%' }}></div>
-              <div className={styles.productPrice} style={{ marginTop: '10px' }}>
-                $89.99
+              <p style={{ color: '#718096', fontSize: '14px', margin: '8px 0' }}>
+                Professional grade carbon fiber paddle
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '10px', fontSize: '15px' }}>
+                $89.99 / €82.79 / £71.09
               </div>
             </div>
           </div>
@@ -183,9 +283,11 @@ export default function Home() {
             ></div>
             <div className={styles.productInfo}>
               <div className={styles.productName}>Pickleball Set</div>
-              <div className="wireframe-text" style={{ height: '15px', width: '80%' }}></div>
-              <div className={styles.productPrice} style={{ marginTop: '10px' }}>
-                $49.99
+              <p style={{ color: '#718096', fontSize: '14px', margin: '8px 0' }}>
+                Starter set with 2 paddles and 4 balls
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '10px', fontSize: '15px' }}>
+                $49.99 / €45.99 / £39.49
               </div>
             </div>
           </div>
@@ -200,9 +302,11 @@ export default function Home() {
             ></div>
             <div className={styles.productInfo}>
               <div className={styles.productName}>Court Net System</div>
-              <div className="wireframe-text" style={{ height: '15px', width: '80%' }}></div>
-              <div className={styles.productPrice} style={{ marginTop: '10px' }}>
-                $299.99
+              <p style={{ color: '#718096', fontSize: '14px', margin: '8px 0' }}>
+                Professional regulation height net
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '10px', fontSize: '15px' }}>
+                $299.99 / €275.99 / £236.99
               </div>
             </div>
           </div>
@@ -217,9 +321,11 @@ export default function Home() {
             ></div>
             <div className={styles.productInfo}>
               <div className={styles.productName}>Court Marking Kit</div>
-              <div className="wireframe-text" style={{ height: '15px', width: '80%' }}></div>
-              <div className={styles.productPrice} style={{ marginTop: '10px' }}>
-                $129.99
+              <p style={{ color: '#718096', fontSize: '14px', margin: '8px 0' }}>
+                Complete line marking system
+              </p>
+              <div className={styles.productPrice} style={{ marginTop: '10px', fontSize: '15px' }}>
+                $129.99 / €119.59 / £102.69
               </div>
             </div>
           </div>
@@ -249,9 +355,10 @@ export default function Home() {
             >
               Expert Installation
             </div>
-            <div className="wireframe-text"></div>
-            <div className="wireframe-text" style={{ width: '90%' }}></div>
-            <div className="wireframe-text" style={{ width: '70%' }}></div>
+            <p style={{ color: '#718096', lineHeight: '1.6', textAlign: 'center' }}>
+              Our certified team handles every aspect of court installation, from site
+              preparation to final touches, ensuring professional results every time.
+            </p>
           </div>
 
           <div className={styles.featureBox}>
@@ -266,9 +373,10 @@ export default function Home() {
             >
               Premium Materials
             </div>
-            <div className="wireframe-text"></div>
-            <div className="wireframe-text" style={{ width: '90%' }}></div>
-            <div className="wireframe-text" style={{ width: '70%' }}></div>
+            <p style={{ color: '#718096', lineHeight: '1.6', textAlign: 'center' }}>
+              We use only the highest quality materials from trusted manufacturers,
+              backed by comprehensive warranties for your peace of mind.
+            </p>
           </div>
 
           <div className={styles.featureBox}>
@@ -283,9 +391,10 @@ export default function Home() {
             >
               Holiday Packages
             </div>
-            <div className="wireframe-text"></div>
-            <div className="wireframe-text" style={{ width: '90%' }}></div>
-            <div className="wireframe-text" style={{ width: '70%' }}></div>
+            <p style={{ color: '#718096', lineHeight: '1.6', textAlign: 'center' }}>
+              Experience world-class destinations with our curated sports holiday
+              packages, combining play, relaxation, and unforgettable memories.
+            </p>
           </div>
         </div>
       </div>

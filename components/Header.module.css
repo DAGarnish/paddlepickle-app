@@ -25,11 +25,75 @@
 
 .logo {
   font-size: 32px;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 600;
   color: #2d3748;
-  font-family: cursive;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoIcon {
+  font-size: 28px;
+  display: inline-block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.logoIcon:first-child {
+  animation-delay: 0s;
+}
+
+.logoIcon:last-child {
+  animation-delay: 0.3s;
+}
+
+.pickleballContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pickleball {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4e157 0%, #cddc39 50%, #c0ca33 100%);
+  position: relative;
+  display: inline-block;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.15),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.4),
+              0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pickleball::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow:
+    inset 4px 4px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 12px 8px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 20px 4px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 4px 12px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 12px 20px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 20px 12px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 8px 16px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 16px 16px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 6px 20px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 20px 20px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 14px 6px 3px 0px rgba(0, 0, 0, 0.2),
+    inset 18px 14px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 .nav {
@@ -65,6 +129,8 @@
   gap: 6px;
   cursor: pointer;
   padding: 10px;
+  position: relative;
+  z-index: 200;
 }
 
 .burgerLine {
@@ -88,15 +154,21 @@
 }
 
 .mobileMenu {
-  display: none;
+  display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0 20px;
   background: #a8c686;
   border-top: 1px solid rgba(45, 55, 72, 0.1);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
 .mobileMenu.active {
-  display: flex;
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px;
 }
 
 .mobileNavItem {
@@ -108,12 +180,44 @@
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .nav {
     display: none;
   }
 
   .burgerMenu {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .logoIcon {
+    font-size: 22px;
+  }
+
+  .pickleball {
+    width: 22px;
+    height: 22px;
+  }
+
+  .pickleball::before {
+    box-shadow:
+      inset 3px 3px 2px 0px rgba(0, 0, 0, 0.2),
+      inset 9px 6px 2px 0px rgba(0, 0, 0, 0.2),
+      inset 15px 3px 2px 0px rgba(0, 0, 0, 0.2),
+      inset 3px 9px 2px 0px rgba(0, 0, 0, 0.2),
+      inset 9px 15px 2px 0px rgba(0, 0, 0, 0.2),
+      inset 15px 9px 2px 0px rgba(0, 0, 0, 0.2),
+      inset 6px 12px 2px 0px rgba(0, 0, 0, 0.2),
+      inset 12px 12px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .topBar {
+    font-size: 12px;
+    padding: 8px 15px;
   }
 }

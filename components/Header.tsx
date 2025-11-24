@@ -23,7 +23,11 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.headerContent}>
           <Link href="/" className={styles.logo}>
-            Padelpickle
+            <span className={styles.logoIcon}>🎾</span>
+            PaddlePickle HQ
+            <span className={`${styles.logoIcon} ${styles.pickleballContainer}`}>
+              <span className={styles.pickleball}></span>
+            </span>
           </Link>
           <nav className={styles.nav}>
             <Link href="/" className={styles.navItem}>
@@ -48,17 +52,17 @@ export default function Header() {
           </div>
         </div>
         <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.active : ''}`}>
-          <Link href="/" className={styles.mobileNavItem}>
+          <Link href="/" className={styles.mobileNavItem} onClick={toggleMenu}>
             Home
           </Link>
-          <div className={styles.mobileNavItem}>Shop</div>
-          <div className={styles.mobileNavItem}>Blogs</div>
-          <div className={styles.mobileNavItem}>About us</div>
-          <div className={styles.mobileNavItem}>Travel</div>
-          <Link href="/contact-us" className={styles.mobileNavItem}>
+          <div className={styles.mobileNavItem} onClick={toggleMenu}>Shop</div>
+          <div className={styles.mobileNavItem} onClick={toggleMenu}>Blogs</div>
+          <div className={styles.mobileNavItem} onClick={toggleMenu}>About us</div>
+          <div className={styles.mobileNavItem} onClick={toggleMenu}>Travel</div>
+          <Link href="/contact-us" className={styles.mobileNavItem} onClick={toggleMenu}>
             Contact us
           </Link>
-          <div className={styles.bookButton} style={{ margin: '20px 0' }}>
+          <div className={styles.bookButton} style={{ margin: '20px 0' }} onClick={toggleMenu}>
             Book A Court
           </div>
         </div>
