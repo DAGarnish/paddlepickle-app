@@ -50,7 +50,7 @@ export default function Home() {
               className={styles.cardImage}
               style={{
                 background:
-                  "url('https://img.b2bpic.net/premium-photo/beautiful-beach-sunset-with-palm-trees-san-diego-california_1194713-164230.jpg') center/cover",
+                  "url('/images/southern-california.jpg') center/cover",
               }}
             ></div>
             <div className={styles.cardContent}>
@@ -131,7 +131,7 @@ export default function Home() {
               className={styles.cardImage}
               style={{
                 background:
-                  "url('https://img.b2bpic.net/premium-photo/beautiful-mediterranean-beach-alicante-spain_1127408-44791.jpg') center/cover",
+                  "url('/images/costa-blanca.jpg') center/cover",
               }}
             ></div>
             <div className={styles.cardContent}>
@@ -156,7 +156,7 @@ export default function Home() {
               className={styles.cardImage}
               style={{
                 background:
-                  "url('https://img.b2bpic.net/premium-photo/beautiful-beach-sunset-with-palm-trees-san-diego-california_1194713-164230.jpg') center/cover",
+                  "url('/images/southern-california.jpg') center/cover",
               }}
             ></div>
             <div className={styles.cardContent}>
