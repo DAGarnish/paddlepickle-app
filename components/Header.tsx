@@ -13,12 +13,6 @@ export default function Header() {
 
   return (
     <>
-      {/* TOP BAR */}
-      <div className={styles.topBar}>
-        Your one-stop shop for all things Padel Tennis and Pickleball, from rackets,
-        paddles & bats to nets and even holidays!
-      </div>
-
       {/* HEADER / NAVIGATION */}
       <header className={styles.header}>
         <div className={styles.headerContent}>

@@ -1,7 +1,7 @@
 .hero {
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url('https://img.b2bpic.net/free-photo/beautiful-outdoor-tropical-beach-sea-ocean-with-umbrella-chair-lounge-deck-around-there-white-cloud-blue-sky_74190-9117.jpg');
+    url('/images/hero-background.png');
   background-size: cover;
   background-position: center;
   display: flex;

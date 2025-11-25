@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'PaddlePickle HQ',
-  description: 'Your one-stop shop for all things Padel Tennis and Pickleball',
+  description: 'Your Net Advantage in Padel Tennis & Pickleball, from accessories, trips away, and even courts!',
 }
 
 export default function RootLayout({
